@@ -1,3 +1,4 @@
+# Marcus Wong, Laurie Delinois 
 # ----- receiver.py -----
 
 #!/usr/bin/env python
