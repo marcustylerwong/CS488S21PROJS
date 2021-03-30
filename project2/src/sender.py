@@ -1,5 +1,3 @@
-# SENDER.PY
-# LAURIE DELINOIS, MARCUS WONG
 # ----- sender.py ------
 
 #!/usr/bin/env python
@@ -43,6 +41,7 @@ while (data):
         #data = f.read(buf)
       
 s.close()
+print("File received, exiting.")
 
 #rate = (total_kb / 125) / timeSec
 #rate = float("%0.3f" % (rate))
