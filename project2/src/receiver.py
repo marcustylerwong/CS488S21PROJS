@@ -9,8 +9,8 @@ import select
 
 #host="0.0.0.0"
 #host =sys.argv[1]
-host = sys.argv[1]
-port = int(sys.argv[2])
+host = '127.0.0.1'
+port = int(sys.argv[1])
 #port = 9999
 s = socket(AF_INET,SOCK_DGRAM)
 s.bind((host,port))
