@@ -43,9 +43,9 @@ while (data):
         #data = f.read(buf)
       
 s.close()
+print("File received, exiting.")
 
-#rate = (total_kb / 125) / timeSec
-#rate = float("%0.3f" % (rate))
+
 elapsed_time = float("%0.3f" % (elapsed_time))
 bytes = total_kb * 1000
 print("Sent " + str(bytes) + " bytes in " + str(elapsed_time) + " seconds: " + str(total_kb) + " kB/s")
