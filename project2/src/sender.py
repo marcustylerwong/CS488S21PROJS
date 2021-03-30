@@ -1,3 +1,5 @@
+# SENDER.PY
+# LAURIE DELINOIS, MARCUS WONG
 # ----- sender.py ------
 
 #!/usr/bin/env python
