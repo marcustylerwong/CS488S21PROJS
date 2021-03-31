@@ -8,7 +8,7 @@ import sys
 import select
 
 #host = sys.argv[1]
-host = '127.0.0.1'
+host = "127.0.0.1"
 port = int(sys.argv[1])
 
 #start socket and bind to sender
@@ -16,8 +16,8 @@ s = socket(AF_INET,SOCK_DGRAM)
 s.bind((host,port))
 
 addr = (host,port)
-#addr = (port)
 buf=1024
+
 
 #f = open("received.txt",'wb')
 
