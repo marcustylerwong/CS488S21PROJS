@@ -7,11 +7,11 @@ from socket import *
 import sys
 import select
 
-#host="0.0.0.0"
-#host =sys.argv[1]
-host = sys.argv[1]
-port = int(sys.argv[2])
-#port = 9999
+#host = sys.argv[1]
+host = '127.0.0.1'
+port = int(sys.argv[1])
+
+#start socket and bind to sender
 s = socket(AF_INET,SOCK_DGRAM)
 s.bind((host,port))
 
@@ -32,6 +32,7 @@ try:
        data,addr = s.recvfrom(buf)
         #f.write(data)
         #s.sendto(data,addr)
+    
 except timeout:
     s.close()
-    #print("File Received, exiting.")
+    sys.stderr.write("File Received, exiting.\n")
